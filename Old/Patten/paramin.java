@@ -1,5 +1,3 @@
-
-
 public class paramin {
     public static void main(String[] args) {
         int n = 5;
