@@ -7,7 +7,7 @@ public class Selection {
 
 //        selection_Sort(arr, n);
 //        Bubble_Sort(arr, n);
-        selection_Sort(arr,n);
+        insertion_Sort(arr,n);
         for(int num:arr){
             System.out.print(num+" ");
         }
@@ -16,10 +16,11 @@ public class Selection {
     static void insertion_Sort(int [] arr, int n ){
         for (int i = 0; i < n; i++) {
             int j = i;
-            while (j-->0 &(arr[j]<arr[j-1])){
+            while (j>0 &&(arr[j]<arr[j-1])){
                 int temp = arr[j-1];
                 arr[j-1]= arr[j];
                 arr[j] = temp;
+                j--;
             }
         }
     }
